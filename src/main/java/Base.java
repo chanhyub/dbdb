@@ -25,7 +25,7 @@ public class Base {
     private void intro() {
         System.out.println("오징어 게임에 오신것을 환영합니다.");
         System.out.println("이번 게임은 구슬 게임입니다.");
-        System.out.println(userName + " 님은 "+mylife+"개, 컴퓨터는 10개의 구슬을 가지고 있습니다.");
+        System.out.println(userName + " 님은 " + mylife + "개, 컴퓨터는 10개의 구슬을 가지고 있습니다.");
         System.out.println("구슬을 모두 잃으면 죽습니다.");
         System.out.println("시작합니다.");
         System.out.println("배팅 하세요");
@@ -53,7 +53,7 @@ public class Base {
             System.out.println("=======================================");
             System.out.println(userName + " 님은 구슬을 모두 잃었습니다.");
             System.out.println("상대방 승리!");
-            DBConn.userdie();
+            DBConn.userdie(); // 유저의 구슬이 0개가 되면 데이터베이스에서 유저 삭제
         } else {
             System.out.println("=======================================");
             System.out.println("상대방이 구슬을 모두 잃었습니다.");

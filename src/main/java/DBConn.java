@@ -79,6 +79,7 @@ public class DBConn {
 
     }
 
+    // 회원가입 메소드
     public static void save(String userid, String userpw, String name) {
         final String driver = "org.mariadb.jdbc.Driver";
         final String DB_IP = "localhost";
@@ -140,6 +141,7 @@ public class DBConn {
 
     }
 
+    // 로그인 메소드
     public static void idcheck(String userid, String userpw) {
         final String driver = "org.mariadb.jdbc.Driver";
         final String DB_IP = "localhost";
@@ -212,6 +214,7 @@ public class DBConn {
 
     }
 
+    // 구슬 저장 메소드
     public static void marbleSave(int marble) {
         final String driver = "org.mariadb.jdbc.Driver";
         final String DB_IP = "localhost";
@@ -271,6 +274,7 @@ public class DBConn {
 
     }
 
+    // 유저 삭제 메소드
     public static void userdie(){
         final String driver = "org.mariadb.jdbc.Driver";
         final String DB_IP = "localhost";
